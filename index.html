@@ -6,197 +6,75 @@
 
 <title>Pharma Aesthetics | Pharmacist-Led Aesthetic Clinic</title>
 
-<meta name="description" content="Pharma Aesthetics by Sonia Jassal. Pharmacist-led aesthetics, luxury skin treatments, Green Peel, microneedling, dermal fillers, anti-wrinkle treatments, vitamin injections and glycolic peels.">
-
 <style>
 :root{
-  --white:#ffffff;
   --cream:#fff8f7;
-  --cream-soft:#fffaf9;
   --blush:#f7dfe5;
-  --blush-soft:#fbecef;
-  --rose:#d9a2ae;
-  --rose-deep:#b9828f;
   --deep:#2b2524;
   --soft:#6f6461;
   --gold:#b68a66;
-  --gold-soft:#d7b98d;
-  --gold-dark:#9f724e;
-  --line:rgba(182,138,102,.24);
-  --shadow:0 25px 70px rgba(80,45,45,.10);
-}
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
 }
 
 body{
-  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(135deg,#fff8f7,#fbecef);
   color:var(--deep);
-  background:var(--cream);
-  line-height:1.7;
-  overflow-x:hidden;
-}
-
-img{
-  max-width:100%;
-  display:block;
-}
-
-a{
-  text-decoration:none;
-  color:inherit;
 }
 
 /* HEADER */
 .header{
   position:fixed;
-  top:0;
-  left:0;
   width:100%;
+  top:0;
+  background:rgba(255,248,247,.9);
+  padding:18px 0;
+  text-align:center;
   z-index:1000;
-  background:rgba(255,248,247,.90);
-  backdrop-filter:blur(18px);
-  -webkit-backdrop-filter:blur(18px);
-  border-bottom:1px solid var(--line);
+  backdrop-filter:blur(10px);
 }
 
-.header-inner{
-  width:min(1200px,92%);
-  margin:auto;
-  height:82px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.logo{
-  font-family:Georgia,serif;
-  font-size:28px;
-  font-weight:700;
-  color:var(--gold-dark);
-  letter-spacing:.5px;
-}
-
-.nav{
-  display:flex;
-  gap:28px;
-  align-items:center;
+.header a{
+  margin:0 15px;
   font-size:13px;
-  letter-spacing:1.5px;
   text-transform:uppercase;
-}
-
-.nav a{
-  color:var(--deep);
-}
-
-.nav a:hover{
-  color:var(--gold-dark);
-}
-
-.nav .book-small{
-  background:var(--gold);
-  color:white;
-  padding:12px 20px;
-  border-radius:999px;
 }
 
 /* HERO */
 .hero{
+  padding-top:120px;
   min-height:100vh;
-  padding-top:82px;
-  display:grid;
-  grid-template-columns:1.05fr .95fr;
-  background:
-    radial-gradient(circle at 14% 22%, rgba(247,223,229,.95), transparent 32%),
-    radial-gradient(circle at 82% 18%, rgba(215,185,141,.22), transparent 30%),
-    linear-gradient(135deg,#fff8f7 0%,#fbecef 48%,#fffaf9 100%);
-}
-
-.hero-copy{
   display:flex;
   align-items:center;
-  padding:7vw 7vw;
-}
-
-.hero-copy-inner{
-  max-width:720px;
+  justify-content:center;
+  text-align:center;
 }
 
 .hero-main-logo{
-  width:230px;
-  max-width:78%;
-  margin-bottom:28px;
-  border-radius:28px;
-  mix-blend-mode:multiply;
-  opacity:.92;
-  filter:saturate(.95) contrast(.98);
-}
-
-.eyebrow{
-  color:var(--gold-dark);
-  text-transform:uppercase;
-  letter-spacing:3px;
-  font-size:12px;
-  font-weight:700;
-  margin-bottom:18px;
-}
-
-h1,h2,h3,h4{
-  font-family:Georgia,serif;
-  font-weight:700;
-  line-height:1.08;
+  width:390px;
+  max-width:90%;
+  display:block;
+  margin:0 auto 30px;
 }
 
 h1{
-  font-size:clamp(48px,7vw,92px);
-  margin-bottom:28px;
-  color:#2b2524;
+  font-family:Georgia,serif;
+  font-size:48px;
+  margin-bottom:20px;
 }
 
-h2{
-  font-size:clamp(36px,5vw,66px);
-  margin-bottom:24px;
-  color:#2b2524;
-}
-
-h3{
-  font-size:28px;
-  margin-bottom:12px;
-}
-
-.hero-copy p{
-  font-size:20px;
+.hero p{
+  max-width:600px;
+  margin:0 auto 25px;
   color:var(--soft);
-  max-width:620px;
-  margin-bottom:34px;
-}
-
-.hero-buttons{
-  display:flex;
-  gap:16px;
-  flex-wrap:wrap;
 }
 
 .btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  min-height:52px;
-  padding:0 30px;
+  padding:12px 22px;
   border-radius:999px;
+  margin:5px;
   font-size:13px;
-  letter-spacing:1.5px;
   text-transform:uppercase;
-  font-weight:700;
-  transition:.3s ease;
 }
 
 .btn-gold{
@@ -204,572 +82,9 @@ h3{
   color:white;
 }
 
-.btn-gold:hover{
-  background:var(--gold-dark);
-}
-
 .btn-outline{
   border:1px solid var(--gold);
-  color:var(--gold-dark);
-  background:rgba(255,255,255,.48);
-}
-
-.hero-visual{
-  position:relative;
-  min-height:100vh;
-  overflow:hidden;
-}
-
-.hero-visual::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(0deg,rgba(43,37,36,.20),rgba(255,248,247,.04)),
-    url("https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1400&q=85");
-  background-size:cover;
-  background-position:center;
-  transform:scale(1.03);
-}
-
-.hero-card{
-  position:absolute;
-  left:40px;
-  bottom:45px;
-  background:rgba(255,248,247,.88);
-  backdrop-filter:blur(18px);
-  -webkit-backdrop-filter:blur(18px);
-  padding:28px;
-  width:min(390px,80%);
-  border:1px solid var(--line);
-  border-radius:28px;
-  box-shadow:var(--shadow);
-}
-
-.hero-card strong{
-  display:block;
-  color:var(--gold-dark);
-  font-size:13px;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  margin-bottom:10px;
-}
-
-.hero-card p{
-  color:var(--soft);
-}
-
-/* SECTIONS */
-.section{
-  padding:110px 7%;
-}
-
-.section-inner{
-  width:min(1200px,100%);
-  margin:auto;
-}
-
-.center{
-  text-align:center;
-}
-
-.center p{
-  margin-left:auto;
-  margin-right:auto;
-}
-
-.lead{
-  color:var(--soft);
-  font-size:19px;
-  max-width:780px;
-}
-
-/* ABOUT */
-.split{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:70px;
-  align-items:center;
-}
-
-.image-frame{
-  position:relative;
-  border-radius:38px;
-  overflow:hidden;
-  min-height:560px;
-  box-shadow:var(--shadow);
-}
-
-.image-frame img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  position:absolute;
-  inset:0;
-}
-
-.gold-panel{
-  background:rgba(255,255,255,.82);
-  border:1px solid var(--line);
-  padding:48px;
-  border-radius:38px;
-  box-shadow:0 22px 70px rgba(80,45,45,.07);
-}
-
-.gold-panel p{
-  color:var(--soft);
-  font-size:18px;
-}
-
-.stats{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:22px;
-  margin-top:34px;
-}
-
-.stat{
-  border-top:1px solid var(--line);
-  padding-top:18px;
-}
-
-.stat span{
-  font-family:Georgia,serif;
-  font-size:34px;
-  color:var(--gold-dark);
-  display:block;
-}
-
-.stat small{
-  color:var(--soft);
-}
-
-/* TREATMENTS */
-.soft-section{
-  background:
-    radial-gradient(circle at 12% 15%, rgba(247,223,229,.85), transparent 34%),
-    linear-gradient(135deg,#fff,#fbecef);
-}
-
-.treat-filter{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:14px;
-  margin:44px 0 42px;
-}
-
-.filter-btn{
-  border:1px solid var(--line);
-  background:white;
-  color:var(--deep);
-  padding:12px 20px;
-  border-radius:999px;
-  font-size:12px;
-  letter-spacing:1.3px;
-  text-transform:uppercase;
-  cursor:pointer;
-}
-
-.filter-btn.active{
-  background:var(--gold);
-  color:white;
-}
-
-.treatment-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:28px;
-}
-
-.treatment-card{
-  position:relative;
-  min-height:420px;
-  border-radius:36px;
-  overflow:hidden;
-  background:#ddd;
-  box-shadow:var(--shadow);
-}
-
-.treatment-card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  position:absolute;
-  inset:0;
-  transition:.5s ease;
-}
-
-.treatment-card:hover img{
-  transform:scale(1.06);
-}
-
-.treatment-card::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(43,37,36,.76));
-}
-
-.treatment-content{
-  position:absolute;
-  z-index:2;
-  bottom:0;
-  padding:30px;
-  color:white;
-}
-
-.treatment-content .tag{
-  font-size:11px;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:#f2d9a6;
-  font-weight:700;
-}
-
-.treatment-content h3{
-  margin:8px 0 10px;
-}
-
-.treatment-content p{
-  color:rgba(255,255,255,.86);
-  font-size:15px;
-}
-
-/* METHOD */
-.method-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:28px;
-  margin-top:50px;
-}
-
-.method-card{
-  background:white;
-  border:1px solid var(--line);
-  padding:40px;
-  border-radius:34px;
-  box-shadow:0 22px 60px rgba(80,45,45,.06);
-}
-
-.method-card span{
-  color:var(--gold-dark);
-  letter-spacing:3px;
-  font-weight:700;
-  font-size:13px;
-}
-
-.method-card p{
-  color:var(--soft);
-}
-
-/* SLIDER */
-.slider-section{
-  background:#2b2524;
-  color:white;
-  overflow:hidden;
-}
-
-.slider-section h2{
-  color:white;
-}
-
-.slider-wrap{
-  position:relative;
-  width:min(1200px,100%);
-  margin:auto;
-}
-
-.slides{
-  display:flex;
-  transition:transform .6s ease;
-}
-
-.slide{
-  min-width:100%;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:60px;
-  align-items:center;
-}
-
-.slide-img{
-  height:560px;
-  border-radius:38px;
-  overflow:hidden;
-}
-
-.slide-img img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-
-.slide-text p{
-  color:rgba(255,255,255,.75);
-  font-size:19px;
-}
-
-.slider-buttons{
-  display:flex;
-  gap:14px;
-  margin-top:30px;
-}
-
-.arrow{
-  width:48px;
-  height:48px;
-  border-radius:50%;
-  border:1px solid rgba(255,255,255,.35);
-  background:transparent;
-  color:white;
-  font-size:22px;
-  cursor:pointer;
-}
-
-/* CONSULTATION */
-.consult-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:26px;
-  margin-top:50px;
-}
-
-.consult-card{
-  background:white;
-  border-radius:34px;
-  padding:36px;
-  border:1px solid var(--line);
-  box-shadow:0 20px 55px rgba(80,45,45,.05);
-}
-
-.consult-icon{
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  background:var(--blush);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:var(--gold-dark);
-  font-size:24px;
-  margin-bottom:22px;
-}
-
-.consult-card p{
-  color:var(--soft);
-}
-
-/* BANNER */
-.banner{
-  position:relative;
-  min-height:520px;
-  display:flex;
-  align-items:center;
-  background:
-    linear-gradient(90deg,rgba(43,37,36,.72),rgba(43,37,36,.20)),
-    url("https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1600&q=85");
-  background-size:cover;
-  background-position:center;
-  color:white;
-}
-
-.banner h2{
-  color:white;
-}
-
-.banner-content{
-  width:min(760px,92%);
-  margin-left:7%;
-}
-
-.banner p{
-  color:rgba(255,255,255,.82);
-  font-size:19px;
-}
-
-/* TESTIMONIALS */
-.testimonials{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:26px;
-  margin-top:50px;
-}
-
-.quote{
-  background:white;
-  border:1px solid var(--line);
-  border-radius:34px;
-  padding:34px;
-  box-shadow:0 20px 55px rgba(80,45,45,.06);
-}
-
-.quote p{
-  color:var(--soft);
-  font-style:italic;
-}
-
-.quote strong{
-  display:block;
-  margin-top:22px;
-  color:var(--gold-dark);
-}
-
-/* BOOKING */
-.booking{
-  background:
-    radial-gradient(circle at 80% 20%, rgba(215,185,141,.22), transparent 30%),
-    linear-gradient(135deg,#fbecef,#fff8f7);
-}
-
-.booking-box{
-  background:white;
-  border:1px solid var(--line);
-  border-radius:42px;
-  padding:60px;
-  display:grid;
-  grid-template-columns:1fr .8fr;
-  gap:50px;
-  align-items:center;
-  box-shadow:0 28px 85px rgba(80,45,45,.08);
-}
-
-.booking-box p{
-  color:var(--soft);
-  font-size:18px;
-}
-
-.booking-list{
-  display:grid;
-  gap:16px;
-}
-
-.booking-list div{
-  padding:18px 20px;
-  border-radius:18px;
-  background:#fff5f6;
-  border:1px solid var(--line);
-}
-
-/* FOOTER */
-.footer{
-  background:#171717;
-  color:white;
-  padding:70px 7% 28px;
-}
-
-.footer-grid{
-  width:min(1200px,100%);
-  margin:auto;
-  display:grid;
-  grid-template-columns:1.4fr 1fr 1fr 1fr;
-  gap:40px;
-}
-
-.footer h3{
-  color:white;
-}
-
-.footer p,.footer a{
-  color:rgba(255,255,255,.68);
-  font-size:15px;
-}
-
-.footer-title{
-  font-family:Georgia,serif;
-  color:var(--gold-soft);
-  font-size:32px;
-  margin-bottom:16px;
-}
-
-.footer-bottom{
-  width:min(1200px,100%);
-  margin:50px auto 0;
-  border-top:1px solid rgba(255,255,255,.12);
-  padding-top:22px;
-  color:rgba(255,255,255,.5);
-  font-size:13px;
-}
-
-/* FLOATING BOOK BUTTON */
-.floating-book{
-  position:fixed;
-  right:22px;
-  bottom:22px;
-  z-index:999;
-  background:var(--gold);
-  color:white;
-  padding:14px 22px;
-  border-radius:999px;
-  font-size:12px;
-  letter-spacing:1.3px;
-  text-transform:uppercase;
-  font-weight:700;
-  box-shadow:0 15px 40px rgba(80,45,45,.22);
-}
-
-/* MOBILE */
-@media(max-width:980px){
-  .hero,
-  .split,
-  .slide,
-  .booking-box{
-    grid-template-columns:1fr;
-  }
-
-  .hero-visual{
-    min-height:65vh;
-  }
-
-  .treatment-grid,
-  .method-grid,
-  .consult-grid,
-  .testimonials,
-  .footer-grid{
-    grid-template-columns:1fr;
-  }
-
-  .nav{
-    display:none;
-  }
-
-  .header-inner{
-    height:72px;
-  }
-
-  .logo{
-    font-size:23px;
-  }
-
-  .section{
-    padding:80px 6%;
-  }
-
-  .hero-copy{
-    padding:70px 6% 50px;
-  }
-
-  .hero-main-logo{
-    width:205px;
-    margin-bottom:24px;
-  }
-
-  .hero-card{
-    left:22px;
-    bottom:22px;
-  }
-
-  .image-frame{
-    min-height:420px;
-  }
-
-  .slide-img{
-    height:420px;
-  }
-
-  .booking-box{
-    padding:34px;
-  }
+  color:var(--gold);
 }
 </style>
 </head>
@@ -777,48 +92,29 @@ h3{
 <body>
 
 <header class="header">
-  <div class="header-inner">
-    <a class="logo" href="#">Pharma Aesthetics</a>
-    <nav class="nav">
-      <a href="#about">About</a>
-      <a href="#treatments">Treatments</a>
-      <a href="#method">Approach</a>
-      <a href="#consultation">Consultation</a>
-      <a href="#book" class="book-small">Book</a>
-    </nav>
-  </div>
+  <a href="#">About</a>
+  <a href="#">Treatments</a>
+  <a href="#">Contact</a>
 </header>
 
-<a href="#book" class="floating-book">Book Now</a>
-
 <section class="hero">
-  <div class="hero-copy">
-    <div class="hero-copy-inner">
+  <div>
 
-      <img src="logo.jpg" alt="Pharma Aesthetics Clinic Logo" class="hero-main-logo">
+    <img src="logo.jpg" alt="Pharma Aesthetics Logo" class="hero-main-logo">
 
-      <p class="eyebrow">Luxury Pharmacist-Led Aesthetic Clinic</p>
-      <h1>Soft, refined, naturally radiant skin.</h1>
-      <p>
-        Advanced skin and aesthetic treatments by Sonia Jassal, blending pharmaceutical knowledge,
-        safety-led practice and a softer, more luxurious approach to visible skin confidence.
-      </p>
-      <div class="hero-buttons">
-        <a href="#book" class="btn btn-gold">Book Consultation</a>
-        <a href="#treatments" class="btn btn-outline">Explore Treatments</a>
-      </div>
+    <h1>Soft, refined, naturally radiant skin.</h1>
+
+    <p>
+      Advanced aesthetic treatments combining clinical knowledge with a luxury, personalised approach.
+    </p>
+
+    <div>
+      <a class="btn btn-gold">Book Consultation</a>
+      <a class="btn btn-outline">Explore Treatments</a>
     </div>
-  </div>
 
-  <div class="hero-visual">
-    <div class="hero-card">
-      <strong>Pharma Aesthetics</strong>
-      <p>Personalised skin, injectable and wellbeing treatments designed with clinical care and elegant refinement.</p>
-    </div>
   </div>
 </section>
-
-<!-- keep the rest of your code exactly the same from ABOUT downwards -->
 
 </body>
 </html>
